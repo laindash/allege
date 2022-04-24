@@ -17,6 +17,6 @@ for k in range(x1, x2 + 1):
         base = r
         bs = (f(int(num), base))
         s.append(bs)
-    print(num)
+    print()
     for l in range(len(s)):
-        print('in', l + 2, ':', s[l], end='\n')
+        print(num, '|', 'in', l + 2, ':', s[l], '|', end=' ')
