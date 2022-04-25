@@ -1,0 +1,15 @@
+y = 2
+while y > 1:
+    def f(i,n):
+        a = "0123456789ABCDFE"
+        b = a[i % n]
+        while i >= n:
+            i = i // n
+            b += a[i % n]
+        return b[::-1]
+    num = (input())
+    ss = (int(input()))
+    ss2 = (int(input()))
+    s = int(num, ss)
+    s = f(s, ss2)
+    print(s)
