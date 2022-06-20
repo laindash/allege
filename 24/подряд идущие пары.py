@@ -1,13 +1,13 @@
 # максимальное кол-во подряд идущих пар AC или AB. Подстрока может содержать только АВ или АС, или одновременно обе пары
-s = open('file.txt').readline()
-s = s.replace('AC', 'X')
-s = s.replace('AB', 'X')
-count = 0
-m = 0
-for i in range(len(s)):
-    if s[i] == 'X':
-        count += 1
-        m = max(count, m)
+a = open('file.txt').readline()
+a = a.replace('AC', 'X')
+a = a.replace('AB', 'X')
+c = 0
+s = []
+for i in a:
+    if i == '*':
+        c += 1
     else:
-        count = 0
-print(m)
+        s.append(c)
+        c = 0
+print(max(s))
